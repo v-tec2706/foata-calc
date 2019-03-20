@@ -7,7 +7,7 @@ createPermutations(List1)->
 
 createDependancies()->
     D = dict:new(),
-    D5 = dict:append('a', {x,[x,y]}, D), %D1
+    D7 = dict:append('a', {x,[x,y]}, D), %D1
     D2 = dict:append('b', {y,[y,z]}, D1),
     D3 = dict:append('c', {x,[x,z]}, D2),
     D4 = dict:append('d', {z,[y,z]}, D3).
