@@ -152,7 +152,7 @@ hasseFunction(T,Alphabet)->
   {_,Dependancies} = checkAllDependancies(Alphabet),
   performNodes(TRev,H,Min,N,[],Dependancies).
 
-%to nie jest ważne 
+%to nie jest ważne, a właśnie że jest xD 
 
 findEdges([],_,FoataForm,Labels) -> lists:flatten(FoataForm);
 findEdges(Nodes,Edges,FoataForm,Labels)->
