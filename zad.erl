@@ -152,6 +152,8 @@ hasseFunction(T,Alphabet)->
   {_,Dependancies} = checkAllDependancies(Alphabet),
   performNodes(TRev,H,Min,N,[],Dependancies).
 
+%to nie jest ważne 
+
 findEdges([],_,FoataForm,Labels) -> lists:flatten(FoataForm);
 findEdges(Nodes,Edges,FoataForm,Labels)->
   MatchingNodes = lists:filter(fun({X,_})-> case lists:any(fun(Y)-> case Y == X of true -> true; _ -> false end end,Nodes) of true -> true;_->false end end,Edges),
