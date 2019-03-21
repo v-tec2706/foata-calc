@@ -7,7 +7,7 @@ createPermutations(List1)->
 
 createDependancies()->
     D = dict:new(),
-    D1 = dict:append('a', {x,[x,y]}, D),
+    D7 = dict:append('a', {x,[x,y]}, D), %D1
     D2 = dict:append('b', {y,[y,z]}, D1),
     D3 = dict:append('c', {x,[x,z]}, D2),
     D4 = dict:append('d', {z,[y,z]}, D3).
@@ -152,7 +152,7 @@ hasseFunction(T,Alphabet)->
   {_,Dependancies} = checkAllDependancies(Alphabet),
   performNodes(TRev,H,Min,N,[],Dependancies).
 
-%to nie jest ważne, a właśnie że jest, no to jest czy nie jest?halooooo :o xD 
+%to nie jest ważne, a właśnie że jest, no to jest czy nie jest?halooooo :o xD
 
 findEdges([],_,FoataForm,Labels) -> lists:flatten(FoataForm);
 findEdges(Nodes,Edges,FoataForm,Labels)->
